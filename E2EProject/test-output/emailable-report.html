@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Validating User login</td><td class="numi">2</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">137.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating title in the Page</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">58.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Validating navigation Bar</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">25.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">4</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">224.4 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Validating User login &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">E2E.HomePage<td><a href="#m1"><b>HomePageTest</b>  </a></td><td class="numi">1</td><td>1634707901164</td><td class="numi">20250</td></tr><tr class="failedodd"><td><a href="#m2"><b>HomePageTest</b>  </a></td><td class="numi">1</td><td>1634707901164</td><td class="numi">20250</td></tr>
+<tr><th colspan="4">Validating User login &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">E2E.HomePage<td><a href="#m3"><b>HomePageTest</b>  </a></td><td class="numi">1</td><td>1634707833408</td><td class="numi">67751</td></tr><tr class="passedodd"><td><a href="#m4"><b>HomePageTest</b>  </a></td><td class="numi">1</td><td>1634707833408</td><td class="numi">67751</td></tr>
+<tr><th colspan="4">Validating title in the Page &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">E2E.ValidateTitle<td><a href="#m5"><b>ValidateTitleBar</b>  </a></td><td class="numi">1</td><td>1634707987948</td><td class="numi">174</td></tr>
+<tr><th colspan="4">Validating navigation Bar &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">E2E.ValidateNavigationBar<td><a href="#m6"><b>ValidateAppNavigationBar</b>  </a></td><td class="numi">1</td><td>1634708013477</td><td class="numi">268</td></tr>
+</table>
+<h1>Validating User login</h1>
+<a id="m1"></a><h2>E2E.HomePage:HomePageTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">null</td>
+<td style="padding-left:.5em;padding-right:2em">null</td>
+<td style="padding-left:.5em;padding-right:2em">null</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="3">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;homepage&apos;]/div[4]/div[2]/div/div/div/span/div/div[6]/div/div/button&quot;}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;GOPIMANISRI&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}), userDataDir=C:\Users\lucky\AppData\Local\Temp\scoped_dir8440_743051002}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58112}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.81, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: c78997c8741af4f36e8e4784e6f2844b
+*** Element info: {Using=xpath, value=//*[@id=&apos;homepage&apos;]/div[4]/div[2]/div/div/div/span/div/div[6]/div/div/button}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at PageObjects.LandingPage.noThanks(LandingPage.java:20)
+<br/>at E2E.HomePage.HomePageTest(HomePage.java:39)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>E2E.HomePage:HomePageTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">nonrestricteduser@qw.com</td>
+<td style="padding-left:.5em;padding-right:2em">123456</td>
+<td style="padding-left:.5em;padding-right:2em">Restrcited User</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating title in the Page</h1>
+<a id="m3"></a><h2>E2E.ValidateTitle:ValidateTitleBar</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating navigation Bar</h1>
+<a id="m4"></a><h2>E2E.ValidateNavigationBar:ValidateAppNavigationBar</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

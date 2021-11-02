@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="E2E.Listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test parallel="none" name="Validating User login(failed)" preserve-order="true">
+    <classes>
+      <class name="E2E.ValidateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- E2E.ValidateNavigationBar -->
+      <class name="E2E.HomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="HomePageTest" invocation-numbers="1"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- E2E.HomePage -->
+      <class name="E2E.ValidateTitle">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- E2E.ValidateTitle -->
+    </classes>
+  </test> <!-- Validating User login(failed) -->
+</suite> <!-- Failed suite [Suite] -->
